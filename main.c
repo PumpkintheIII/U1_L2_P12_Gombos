@@ -3,9 +3,20 @@
   Area and Circumference of a Circle
   Max Gombos
 */
-#include <stdio.h>
+#include <stdio.h> //import input and output functions
 
-int main(void) {
+int main(void) { //define main function
+  float radius, circumference, area; //initiailize variable as float
+  float pi; //initiailize variable as float
+
+  pi = 3.14159; //set pi var to pi
+
+  printf("Radius: "); //ask user for radius
+  scanf("%f", &radius); //accepts user input and formats as float
+
+  area = pi * (radius * radius); //find area of circle
+
+  printf("Area: %0.2f", area); //output area
   
   return 0;
 }
