@@ -15,8 +15,10 @@ int main(void) { //define main function
   scanf("%f", &radius); //accepts user input and formats as float
 
   area = pi * (radius * radius); //find area of circle
+  circumference = 2 * (pi * radius); //find circumference
 
   printf("Area: %0.2f", area); //output area
+  printf("\nCircumference: %0.2f", circumference); //output
   
   return 0;
 }
